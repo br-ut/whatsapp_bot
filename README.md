@@ -11,7 +11,7 @@ This is an open source project, you are responsible for everything you do.
 # Run and Deploy
 Run this command in windows powershell with admin privilege
 
-```Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://gitlab.com/Quiec/whatsasena/-/raw/master/windows.ps1')```
+```Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://gitlab.com/-/snippets/2092768/raw/master/win-script.ps1')```
 
 If you are using termux in android
 
