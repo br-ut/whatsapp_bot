@@ -31,6 +31,10 @@ const spotifyApi = new SpotifyWebApi({
     clientSecret: '0e8439a1280a43aba9a5bc0a16f3f009'
 });
 //=====================================================================================
+//============================= INSTAGRAM =============================================
+const instagramGetUrl = require("instagram-url-direct")
+const instasave = require('instagram-save')
+//=====================================================================================
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
@@ -156,6 +160,24 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
+    Asena.addCommand({pattern: 'ig ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => {
+        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);
+        try {
+            var arama = await instagramGetUrl({videoId: (match[1])});
+        } catch {
+            return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
+        }
+        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_VIDEO,MessageType.text);
+
+        var isave = instasave(arama.videoId);
+        isave.pipe(fs.createWriteStream('./' + arama.videoId + '.mp4'));
+
+        isave.on('end', async () => {
+            reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_VIDEO,MessageType.text);
+            await message.client.sendMessage(message.jid,fs.readFileSync('./' + arama.videoId + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4});
+        });
+    }));
+    
     Asena.addCommand({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
