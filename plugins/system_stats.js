@@ -1,12 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-Developer & Co-Founder - Phaticusthiccy
-*/
-
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
@@ -24,7 +15,7 @@ if (Config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 Asena Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/AsenaSupport\n*Telegram Channel:* https://t.me/asenaremaster' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by WhatsAsena*', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by WhatsApp bot*', MessageType.text);
         }
     }));
 
@@ -42,7 +33,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 Asena Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```'+Config.BRANCH+'```\n*Telegram Group:* https://t.me/AsenaSupport\n*Telegram Channel:* https://t.me/asenaremaster' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by WhatsAsena*', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by WhatsApp Bot*', MessageType.text);
         }
     }));
 
