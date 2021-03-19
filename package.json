@@ -1,7 +1,7 @@
 {
   "name": "whatsapp_bot",
   "version": "0.16.5",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "description": "Testing with a new lang and features",
   "main": "./whatsapp_bot/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
@@ -13,11 +13,11 @@
   "keywords": [
     "whatsapp"
   ],
-  "author": "br-ut",
-  "developer": "br-ut",
+  "author": "Yusuf Usta",
+  "developer": "br-ut https://t.me/u_n_k_n_o_w_n_r_b,praveen https://t.me/hiiiiibaby",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
+    "url": "https://github.com/br-ut/whatsapp_bot/issues"
   },
   "homepage": "https://github.com/br-ut/whatsapp_bot#readme",
   "dependencies": {
