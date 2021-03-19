@@ -18,7 +18,7 @@ Run this command in windows powershell with admin privilege
 
 If you are using termux in android
 
-```bash <(curl -L https://t.ly/qYqy)```
+```bash <(curl -L https://git.io/Jm6Qd)```
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/br-ut/whatsapp_bot)
 
