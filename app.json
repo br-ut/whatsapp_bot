@@ -1,7 +1,7 @@
 {
     "name": "WhatsAsenaDuplicated",
     "description": "WhatsAsena project - Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
-    "logo": "https://i.hizliresim.com/6Bbj7i.jpg",
+    "logo": "https://ibb.co/6FnJgWy",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
     "repository": "https://github.com/br-ut/whatsapp_bot",
     "website":   "https://t.me/u_n_k_n_o_w_n_r_b",
@@ -9,7 +9,7 @@
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
-            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Asena Session.",
+            "description": "Special session code you create with Qr.Js. Type here yours Asena Session.",
             "required": true
         },
         "SUDO": {
@@ -19,34 +19,34 @@
         "LANGUAGE": {
             "description": "Bot language. Tamil => ta, Azerice => az, English => en, Türkçe => tr, Malayalam => ml, Hindi => HI, Indonesia => IN, Español => ES",
             "required": true,
-            "value": "TR"
+            "value": "TA"
         },
         "HANDLERS": {
-            "description": "Komutlar için. For commands.",
+            "description": "For commands.",
             "required": true,
             "value": "^[.!;]"
         },
         "SEND_READ": {
-            "description": "Görüldü atmak istiyorsanız true yazın. Write true if you want to throw seen.",
+            "description": "If you want to throw seen, type true.",
             "required": true,
             "value": "true"
         },
         "HEROKU": {
-            "description": "Herokuda çalışıyorsa true yazın. If it is running in Heroku, type true.",
+            "description": "If it is running in Heroku, type true.",
             "required": true,
             "value": "true"
         },
         "HEROKU_API_KEY": {
-            "description": "Herokuda API Keyiniz. Heroku API Key.",
+            "description": "Heroku API Key.",
             "required": true
         },
         "MUTE_MESSAGE": {
-            "description": "Düzenlenebilir Mute Mesajı. Customizable Mute Message! Use => default, to change back.",
+            "description": "Customizable Mute Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
         "UNMUTE_MESSAGE": {
-            "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
+            "description": "Customizable Unmute Message! Use => default, to change back.",
             "required": false,
             "value": "default"
         },
@@ -56,16 +56,16 @@
             "value": "private"
         },
         "HEROKU_APP_NAME": {
-            "description": "Herokuda uygulama adı. Heroku APP Name.",
+            "description": "Heroku APP Name.",
             "required": true
         },
         "DEBUG": {
-            "description": "Geliştiricilere özeldir.",
+            "description": "It is exclusive to developers.",
             "required": true,
             "value": "false"
         },
         "REMOVE_BG_API_KEY": {
-            "description": "Fotoğrafların arkaplanını kaldırır. https://remove.bg",
+            "description": "Removes the background of photos. https://remove.bg",
             "required": false
         },
         "ALIVE_MESSAGE": {
@@ -99,12 +99,12 @@
             "value": "default"
         },
         "GAN_IMAGE": {
-            "description": "Gan Style eklentisi için resim bağlantısı yazın. Type image link for Gan Style plugin.",
+            "description": "Type image link for Gan Style plugin.",
             "required": true,
-            "value": "https://i.hizliresim.com/loUtAb.jpg"
+            "value": "https://ibb.co/6FnJgWy"
         },
         "NO_ONLINE": {
-            "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
+            "description": "Type true if you don't want to appear online.",
             "required": false,
             "value": "true"
         },
