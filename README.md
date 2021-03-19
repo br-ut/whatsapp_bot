@@ -1,3 +1,6 @@
+Credits - https://github.com/yusufusta and https://github.com/phaticusthiccy
+
+
 # whatsapp_bot
 Duplicated from Whatsasena and added tamil language
 
