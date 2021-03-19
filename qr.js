@@ -36,7 +36,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
         }
 
         console.log(
-            chalk.blue.bold('Locale kuruyorsanız node bot.js ile botu başlatabilirsiniz.')
+            chalk.blue.bold('If you are installing Locale, you can start the bot with node bot.js.')
         );
         process.exit(0);
     });
