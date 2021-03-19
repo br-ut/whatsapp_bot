@@ -8,7 +8,7 @@ Due to Userbot; Your WhatsApp account may be banned.
 This is an open source project, you are responsible for everything you do. 
 ```
 
-# Deploy
+# Run and Deploy
 Run this command in windows powershell with admin privilege
 
 ```Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://gitlab.com/Quiec/whatsasena/-/raw/master/windows.ps1')```
